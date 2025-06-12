@@ -1,5 +1,42 @@
-template-repository (1.0-1) unstable; urgency=medium
+tree-sitter-query (0.4.0-3) unstable; urgency=medium
 
-  * Initial release
+  * Add libc-dev and make to tree-sitter-query-src Depends
+  * Add cargo and rustc explicitly to Build-Depends
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- James McCoy <jamessan@debian.org>  Sun, 16 Mar 2025 22:23:01 -0400
+
+tree-sitter-query (0.4.0-2) unstable; urgency=medium
+
+  * Upload to unstable
+  * Revert "Switch branch to debian/experimental"
+  * Declare compliance with Policy 4.7.2, no changes needed
+
+ -- James McCoy <jamessan@debian.org>  Sat, 08 Mar 2025 14:24:38 -0500
+
+tree-sitter-query (0.4.0-1) experimental; urgency=medium
+
+  * New upstream version
+  * Adapt shared object build from C++ to C
+  * Switch pkg-config Depends to pkgconf
+  * Include src/tree_sitter/ in the package
+  * d/clean: Add trailing slash to debian/.cache/
+  * Add salsa-ci.yml config
+  * Switch branch to debian/experimental
+  * Bump minimum version of tree-sitter (Build-)Depends to 0.21
+  * Declare compliance with Policy 4.7.0, no changes needed
+  * Add librust-tree-sitter-query-dev package
+
+ -- James McCoy <jamessan@debian.org>  Thu, 26 Dec 2024 17:15:52 -0500
+
+tree-sitter-query (0.1.0-2) unstable; urgency=medium
+
+  * Upload to unstable
+  * Add comment about provenance of src/tree_sitter/parser.h
+
+ -- James McCoy <jamessan@debian.org>  Thu, 25 Jan 2024 07:56:57 -0500
+
+tree-sitter-query (0.1.0-1) experimental; urgency=medium
+
+  * Initial debianization. (Closes: #1052204)
+
+ -- James McCoy <jamessan@debian.org>  Mon, 09 Oct 2023 20:30:30 -0400
